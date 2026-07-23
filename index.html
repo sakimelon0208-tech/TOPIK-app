@@ -302,7 +302,7 @@
 /* ---------------- default plan ---------------- */
 const DEFAULT = {
   meta:{
-    eyebrow:"TOPIK II · 2026.07 → 2027.04",
+    eyebrow:"TOPIK II · 2026.08 → 2027.04",
     title:"TOPIK讀書計劃",
     lede:"目標：總分 150+／300",
     examLabel:"TOPIK II 考試",
@@ -315,42 +315,40 @@ const DEFAULT = {
     {k:"寫作（衝刺期）", v:"1–2", small:"篇 / 週"}
   ],
   phases:[
-    {no:"01", color:"p1", title:"打底期", when:"JUL – OCT 2026",
-     goal:"讀完《中級I》,把**文法補到 3 級穩、4 級邊緣**,同時建立詞彙底盤。步調約 1.5 課／週。",
+    {no:"01", color:"p1", title:"打底期", when:"AUG – NOV 2026",
+     goal:"讀完《中級I》,把**文法補到 3 級穩、4 級邊緣**,同時建立詞彙底盤。步調約 **2 課／週**(已扣掉休息週)。",
      kit:[
-       {txt:"**課本 3 課**　讀透:課文＋文法＋STEP 練習全做"},
-       {txt:"**單字 累積 ~150 個**"},
+       {txt:"**課本 2 課**　讀透:課文＋文法＋STEP 練習全做"},
+       {txt:"**單字 累積 ~130 個**"},
        {txt:"**聽力 1 回**　計時作答"},
        {txt:"**閱讀 2 篇短文**　標出漢字語"},
        {txt:"**週日複習**　錯題＋單字總複習,", small:"不學新字"}
      ],
      months:[
-       {num:"7", en:"JUL", year:2026, vbar:{label:"詞彙目標", value:"2,400", pct:48}, rows:[
-         {tag:"課程", txt:"中級I 第 **1–8** 課"},{tag:"聽力", txt:"熟悉中級語速,1 次／週"}]},
-       {num:"8", en:"AUG", year:2026, vbar:{label:"詞彙目標", value:"2,700", pct:54}, rows:[
-         {tag:"課程", txt:"中級I 第 **9–14** 課"},{tag:"閱讀", txt:"開始短篇文章,抓漢字語"}]},
-       {num:"9", en:"SEP", year:2026, vbar:{label:"詞彙目標", value:"3,000", pct:60}, rows:[
-         {tag:"課程", txt:"中級I 第 **15–20** 課 ＋ Review"},{tag:"考古題", txt:"TOPIK II 聽力單元 1 回試水溫"}]},
-       {num:"10", en:"OCT", year:2026, vbar:{label:"詞彙鞏固", value:"3,000", pct:60}, rows:[
-         {tag:"複習", txt:"全書錯題整理,文法卡片化"},{tag:"選配", txt:"10/18 日本場可裸考當診斷（非目標）"}]}
+       {num:"8", en:"AUG", year:2026, vbar:{label:"詞彙目標", value:"2,300", pct:46}, rows:[
+         {tag:"課程", txt:"中級I 第 **1–3** 課"},{tag:"聽力", txt:"熟悉中級語速,1 次／週"},{tag:"提醒", txt:"只有 2 個可用週,先把節奏建立起來"}]},
+       {num:"9", en:"SEP", year:2026, vbar:{label:"詞彙目標", value:"2,700", pct:54}, rows:[
+         {tag:"課程", txt:"中級I 第 **4–9** 課"},{tag:"閱讀", txt:"開始短篇文章,抓漢字語"}]},
+       {num:"10", en:"OCT", year:2026, vbar:{label:"詞彙目標", value:"3,100", pct:62}, rows:[
+         {tag:"課程", txt:"中級I 第 **10–15** 課"},{tag:"考古題", txt:"TOPIK II 聽力單元 1 回試水溫"},{tag:"選配", txt:"10/18 日本場可裸考當診斷（時間緊可略過）"}]},
+       {num:"11", en:"NOV", year:2026, vbar:{label:"詞彙目標", value:"3,500", pct:70}, rows:[
+         {tag:"課程", txt:"中級I 第 **16–20** 課 ＋ 全書 Review"},{tag:"複習", txt:"錯題整理,文法卡片化"}]}
      ]},
-    {no:"02", color:"p2", title:"銜接期", when:"NOV 2026 – JAN 2027",
-     goal:"進《中級II》**補齊 4 級文法**,聽力與閱讀開始上量,寫作先熱身（造句＋圖表）。",
+    {no:"02", color:"p2", title:"銜接期", when:"DEC 2026 – JAN 2027",
+     goal:"進《中級II》**挑 4 級文法重點**補齊,聽力與閱讀上量,寫作先熱身（造句＋圖表）。只有 7 個可用週,**以重點為主、不求讀完整本**。",
      kit:[
-       {txt:"**課本(中級II) 2–3 課**　挑 4 級文法重點"},
-       {txt:"**單字 累積 ~170 個**"},
+       {txt:"**課本(中級II) 2 課**　只挑 4 級文法重點"},
+       {txt:"**單字 累積 ~120 個**"},
        {txt:"**聽力 2 回**　計時＋對答案分析"},
        {txt:"**閱讀 2–3 篇**　含長文,練速度"},
        {txt:"**寫作 1 篇**　造句／圖表 交替"},
        {txt:"**週日複習**　每兩週加一次單科小模擬"}
      ],
      months:[
-       {num:"11", en:"NOV", year:2026, vbar:{label:"詞彙目標", value:"3,500", pct:70}, rows:[
-         {tag:"課程", txt:"中級II 前段（挑 4 級文法重點）"},{tag:"聽力", txt:"2 次／週,計時作答"}]},
-       {num:"12", en:"DEC", year:2026, vbar:{label:"詞彙目標", value:"4,000", pct:80}, rows:[
-         {tag:"課程", txt:"中級II 中段"},{tag:"寫作", txt:"造句 ＋ 圖表題 各 1／週"},{tag:"閱讀", txt:"長文理解,練速度"}]},
+       {num:"12", en:"DEC", year:2026, vbar:{label:"詞彙目標", value:"3,900", pct:78}, rows:[
+         {tag:"課程", txt:"中級II 4 級文法重點（前半）"},{tag:"聽力", txt:"2 次／週,計時作答"},{tag:"寫作", txt:"造句 ＋ 圖表題 各 1／週"},{tag:"提醒", txt:"**12/25 前**把本月進度做完"}]},
        {num:"1", en:"JAN", year:2027, vbar:{label:"詞彙目標", value:"4,300", pct:86}, rows:[
-         {tag:"課程", txt:"中級II 後段收尾"},{tag:"模擬", txt:"首次計時全真模擬 1 回"},{flag:"reg", txt:"🔔 4 月場報名開放,開放日就搶東京考場"}]}
+         {tag:"課程", txt:"中級II 4 級文法重點（後半）收尾"},{tag:"模擬", txt:"首次計時全真模擬 1 回（1/4 之後）"},{tag:"閱讀", txt:"長文理解,練速度"},{flag:"reg", txt:"🔔 4 月場報名開放,開放日就搶東京考場"}]}
      ]},
     {no:"03", color:"p3", title:"衝刺期", when:"FEB – APR 2027",
      goal:"全面轉**考古題實戰 ＋ 計時模擬**。重點打**寫作**(最容易失分)與你的弱項單科。",
@@ -363,7 +361,7 @@ const DEFAULT = {
        {txt:"**週日**　錯題本回顧"}
      ],
      months:[
-       {num:"2", en:"FEB", year:2027, vbar:{label:"詞彙目標", value:"4,500", pct:90}, rows:[
+       {num:"2", en:"FEB", year:2027, vbar:{label:"詞彙目標", value:"4,600", pct:92}, rows:[
          {tag:"模擬", txt:"全真模擬 **1 回／週**"},{tag:"寫作", txt:"1 篇／週（含 600–700 字論說文）"},{tag:"複習", txt:"錯題本回頭刷"}]},
        {num:"3", en:"MAR", year:2027, vbar:{label:"詞彙目標", value:"4,800", pct:96}, rows:[
          {tag:"模擬", txt:"1–2 回／週"},{tag:"寫作", txt:"2 篇／週（含論說文）"},{tag:"攻弱", txt:"弱項單科集中強攻"}]},
@@ -431,6 +429,15 @@ function ensureShape(){
   plan.daily=plan.daily||clone(DEFAULT.daily);
   plan.sample=plan.sample||clone(DEFAULT.sample);
   if(!("note" in plan)) plan.note=DEFAULT.note;
+
+  // one-time: rebase the whole timeline to start in August 2026
+  if(!plan.meta.rebaseAug_v3){
+    plan.phases=clone(DEFAULT.phases);
+    plan.meta.eyebrow=DEFAULT.meta.eyebrow;
+    delete plan.meta.kitApplied_v1;
+    delete plan.meta.restApplied_v1;
+    plan.meta.rebaseAug_v3=true;
+  }
 
   plan.phases.forEach((ph,pi)=>{
     if(!Array.isArray(ph.kit)) ph.kit = DEFAULT.phases[pi] ? clone(DEFAULT.phases[pi].kit) : [];
